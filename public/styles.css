@@ -165,7 +165,8 @@ select option{
     font-size: 18px;
 }
 
-button[type='submit']{
+button[type='submit'],
+a.button{
     padding: 8px 32px;
     background-color: var(--orange-color);
     color: white;
@@ -173,4 +174,11 @@ button[type='submit']{
     margin-top: 32px;
     width: 100%;
     font-size: 16px;
+}
+
+a.button{
+    text-decoration: none;
+    box-sizing: border-box;
+    text-align: center;
+    display: block;
 }

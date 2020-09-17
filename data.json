@@ -1,0 +1,24 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "name": "Victor Martins Soares",
+      "avatar_url": "http://google.com",
+      "birth": 850694400000,
+      "education_level": "high",
+      "class_type": "remotely",
+      "services": "Computação, Economia",
+      "create_at": 1600352647780
+    },
+    {
+      "id": 2,
+      "name": "Lobo",
+      "avatar_url": "http://google.com",
+      "birth": 903312000000,
+      "education_level": "master",
+      "class_type": "presential",
+      "services": "Engenharia civil, educacao fisica",
+      "create_at": 1600352687917
+    }
+  ]
+}
