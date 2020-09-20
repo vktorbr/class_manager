@@ -172,7 +172,7 @@ a.button{
     color: white;
     border-radius: 4px;
     margin-top: 32px;
-    width: 100%;
+    width: 45%;
     font-size: 16px;
 }
 
@@ -181,4 +181,16 @@ a.button{
     box-sizing: border-box;
     text-align: center;
     display: block;
+}
+#form-edit button{
+    position: relative;
+    top: 42px;
+}
+#form-delete button{
+    float: right;
+}
+
+#form-delete button[type="submit"]{
+    margin-top: 8px;
+    background-color: rgb(255, 134, 134);
 }
