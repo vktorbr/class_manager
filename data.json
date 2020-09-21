@@ -1,3 +1,24 @@
 {
-  "teachers": []
+  "teachers": [
+    {
+      "id": 1,
+      "name": "Lobo",
+      "avatar_url": "https://instagram.frec10-1.fna.fbcdn.net/v/t51.2885-15/e35/117159398_583754962291582_3635324287710252485_n.jpg?_nc_ht=instagram.frec10-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=cxuO7UHklh0AX9qvczm&_nc_tp=18&oh=06716d6e1e78d628516df1b5f66b7cf0&oe=5F93C72F",
+      "birth": 852076800000,
+      "education_level": "high",
+      "class_type": "presential",
+      "services": "Engenharia civil, educacao fisica",
+      "create_at": 1600717434809
+    },
+    {
+      "id": 2,
+      "name": "Victor Martins",
+      "avatar_url": "https://instagram.frec10-1.fna.fbcdn.net/v/t51.2885-15/fr/e15/p1080x1080/119421186_780464816119248_5416161664114751847_n.jpg?_nc_ht=instagram.frec10-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=8WxmLX0a-mkAX_kgxG9&oh=1adf337222d03296fc35580f81ae8797&oe=5F92D953",
+      "birth": 850694400000,
+      "education_level": "medium",
+      "class_type": "remotely",
+      "services": "Computação, Economia",
+      "create_at": 1600717481739
+    }
+  ]
 }
