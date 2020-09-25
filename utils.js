@@ -38,6 +38,37 @@ module.exports = {
         return education_level;
 
     },
+    grade: function(level){
+        let school_year = '';
+        switch (level) {
+            case '5f':
+                school_year = '5° ano do ensino fundamental';
+                break;
+            case '6f':
+                school_year = '6° ano do ensino fundamental';
+                break;
+            case '7f':
+                school_year = '7° ano do ensino fundamental';
+                break;
+            case '8f':
+                school_year = '8° ano do ensino fundamental';
+                break;
+            case '1m':
+                school_year = '1° ano do ensino médio';
+                break;
+            case '2m':
+                school_year = '2° ano do ensino médio';
+                break;
+            case '3m':
+                school_year = '3° ano do ensino médio';
+                break;
+            default:
+                break;        
+        }
+
+        return school_year;
+
+    },
     date: function(timestamp){
         const birthDate = new Date(timestamp);
 
@@ -45,6 +76,11 @@ module.exports = {
         const month = `0${birthDate.getUTCMonth() + 1}`.slice(-2);
         const day = `0${birthDate.getUTCDate()}`.slice(-2);
 
-        return (`${year}-${month}-${day}`);
+        return{
+            year,
+            month,
+            day,
+            birthdate: `${day}/${month}`,
+            iso: `${year}-${month}-${day}`};
     }
 }

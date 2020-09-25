@@ -1,4 +1,15 @@
 {
+  "students": [
+    {
+      "id": 1,
+      "avatar_url": "http://google.com",
+      "name": "lobo",
+      "email": "bodybuildingnaturalbr@gmail.com",
+      "birth": -58637260800000,
+      "school_year": "5f",
+      "workload": "12"
+    }
+  ],
   "teachers": [
     {
       "id": 1,
