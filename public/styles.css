@@ -172,7 +172,7 @@ a.button{
     color: white;
     border-radius: 4px;
     margin-top: 32px;
-    width: 45%;
+    width: 100%;
     font-size: 16px;
 }
 
@@ -260,3 +260,29 @@ tbody tr td:last-child a,
     margin-bottom: 16px;
     display: inline-block;
 }
+/* FILTER */
+.table-container .header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 32px;
+    align-items: center;
+}
+
+.table-container .header a{
+    margin: 0;
+    width: 120px;
+}
+.table-container .header form{
+    display: grid;
+    grid-template-columns: 1fr 120px;
+    align-items: center;
+    gap: 8px;
+}
+.table-container .header form input{
+    border: 1px solid #eee;
+    padding: 4px 8px;
+    box-sizing: border-box;
+} 
+.table-container .header form button{
+    margin: 0;
+} 

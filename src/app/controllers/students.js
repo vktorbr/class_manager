@@ -8,7 +8,9 @@ module.exports = {
         })
     },
     create(req, res){
-        return res.render('students/create');
+        Student.teachersSelectOptions(function(option){
+            return res.render('students/create', {teachersSelectOptions: option});
+        })
     },
     post(req, res){
         const keys = Object.keys(req.body);
@@ -36,7 +38,9 @@ module.exports = {
             if(!student) return res.send('Student not found!');
             student.birth = date(student.birth).iso;
 
-            return res.render('students/edit', {student});
+            Student.teachersSelectOptions(function(option){
+                return res.render('students/edit', {teachersSelectOptions: option, student});
+            })
         })
     },
     put(req, res){
