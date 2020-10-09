@@ -3,9 +3,33 @@ const Student = require('../model/Student');
 
 module.exports = {
     index(req, res){
-        Student.all(function(students){
-            return res.render('students/index', {students});
-        })
+        let {filter, limit, page} = req.query;
+
+        page = page || 1;
+        limit = limit || 2;
+        let offset = limit * (page - 1);
+
+        const params = {
+            filter,
+            page,
+            limit,
+            offset,
+            callback(students){
+                let totalAux = 0;
+                if(students[0]){
+                    totalAux = students[0].total;
+                }else{
+                    totalAux = 1;
+                }
+                const pagination = {
+                    total: Math.ceil(totalAux / limit),
+                    page
+                }
+                return res.render('students/index', {students, filter, pagination});
+            }
+        }
+
+        Student.paginate(params);
     },
     create(req, res){
         Student.teachersSelectOptions(function(option){
