@@ -164,6 +164,9 @@ select option{
     font-weight: bold;
     font-size: 18px;
 }
+button{
+    cursor: pointer;
+}
 
 button[type='submit'],
 a.button{
@@ -172,8 +175,9 @@ a.button{
     color: white;
     border-radius: 4px;
     margin-top: 32px;
-    width: 45%;
+    width: 100%;
     font-size: 16px;
+
 }
 
 a.button{
@@ -184,7 +188,6 @@ a.button{
 }
 #form-edit button{
     position: relative;
-    top: 42px;
 }
 #form-delete button{
     float: right;
@@ -259,4 +262,57 @@ tbody tr td:last-child a,
 .table-container > a{
     margin-bottom: 16px;
     display: inline-block;
+}
+/* FILTER */
+.table-container .header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 32px;
+    align-items: center;
+}
+
+.table-container .header a{
+    margin: 0;
+    width: 120px;
+}
+.table-container .header form{
+    display: grid;
+    grid-template-columns: 1fr 120px;
+    align-items: center;
+    gap: 8px;
+}
+.table-container .header form input{
+    border: 1px solid #eee;
+    padding: 4px 8px;
+    box-sizing: border-box;
+} 
+.table-container .header form button{
+    margin: 0;
+}
+/* PAGINATION */
+.table-container{
+    display: grid;
+    grid-template: 64px 1fr 16px / 1fr;
+}
+.table-container .header{
+    margin: 0;
+    align-self: start;
+}
+
+.table-container .pagination{
+    margin: 0;
+    align-self: end;
+    justify-self: center;
+}
+
+.pagination a,
+.pagination span{
+    color: var(--orange-color);
+    text-decoration: none;
+    margin-right: 16px;
+}
+
+.pagination a:hover{
+    filter: brightness(0.7);
+    border-bottom: 1px solid var(--orange-color);
 }

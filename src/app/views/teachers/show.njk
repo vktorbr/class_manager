@@ -30,14 +30,14 @@
         <div class="item">
             <div>Área de atuação</div>
             <div>
-                {% for service in teacher.services %}
-                <span>{{service}}</span>
+                {% for subject in teacher.subjects_taught %}
+                <span>{{subject}}</span>
                 {% endfor %}
             </div>
         </div>
         <div class="item">
             <div>Desde</div>
-            <div>{{teacher.create_at}}</div>
+            <div>{{teacher.created_at}}</div>
         </div>
         <a href="/teachers/{{teacher.id}}/edit" class="button">Editar</a>
     </section>
