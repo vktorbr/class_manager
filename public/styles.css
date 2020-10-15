@@ -164,6 +164,9 @@ select option{
     font-weight: bold;
     font-size: 18px;
 }
+button{
+    cursor: pointer;
+}
 
 button[type='submit'],
 a.button{
@@ -174,6 +177,7 @@ a.button{
     margin-top: 32px;
     width: 100%;
     font-size: 16px;
+
 }
 
 a.button{
@@ -184,7 +188,6 @@ a.button{
 }
 #form-edit button{
     position: relative;
-    top: 42px;
 }
 #form-delete button{
     float: right;
